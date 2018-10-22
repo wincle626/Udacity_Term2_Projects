@@ -31,6 +31,9 @@ The goals / steps of this project are the following:
         x = x' + K * y  -  Updated state estimate 
         P = (I − K * H) * P'  -  Updated estimate covariance 
 
+### 4. Extended Kalman filter
+
+        A matrix of partial derivatives (the Jacobian) is computed which essentially linearizes the non-linear function around the current estimate.
 
 ## Simulation
 
