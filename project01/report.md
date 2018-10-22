@@ -41,7 +41,7 @@ The goals / steps of this project are the following:
 ### 3. Connect the simulator.
       Dataset1:      
 ![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/dataset1.png)
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/video1.gif)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/video.gif)
       Dataset2:      
 ![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/dataset2.png)
 ![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/video2.gif)
