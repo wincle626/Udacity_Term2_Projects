@@ -12,10 +12,24 @@ The goals / steps of this project are the following:
 
 ### 1. Initialize the state and covariance matrices.
 
+        x - Initial measurement
+        F - State transition model
+        P - Error covariance matrix (a measure of the estimated accuracy of the state estimate)
+        H - Observation model
+        Q - Covariance of the process noise
+
 ### 2. Predict the state.
+
+        x' = F * x + u  -  Predicted (a priori) state estimate 
+        P = F * P * F^T + Q  -  Predicted (a priori) error covariance
 
 ### 3. Update the state and covariance matrices.
 
+        y = z − H * x'  -  Measurement pre-fit residual 
+        S = H * P' * H^T + R  -  Pre-fit residual covariance 
+        K = P' * H * S^-1  -  Kalman gain 
+        x = x' + K * y  -  Updated state estimate 
+        P = (I − K * H) * P'  -  Updated estimate covariance 
 
 
 ## Simulation
