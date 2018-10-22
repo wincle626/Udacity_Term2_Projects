@@ -1,1 +1,1 @@
-# Udacity_Term2_Projects
+# Udacity SDCE Term2 Project Submissions
