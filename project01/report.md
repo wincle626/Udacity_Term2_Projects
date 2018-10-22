@@ -31,10 +31,15 @@ The goals / steps of this project are the following:
         x = x' + K * y  -  Updated state estimate 
         P = (I − K * H) * P'  -  Updated estimate covariance 
 
-### 4. Extended Kalman filter
+### 4. Extended Kalman Filter
 
-A matrix of partial derivatives (the Jacobian) is computed which essentially linearizes the non-linear function around the current estimate.
+Extended Kalman Filter essentially linearizes the non-linear function around the current estimate. A matrix of partial derivatives (the Jacobian) is computed:
+
 ![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/74e93aa903c2695e45770030453eb77224104ee4.svg)
+
+which is used for updating process :
+
+        y = z − H * x'  -  Measurement pre-fit residual 
 
 ## Simulation
 
