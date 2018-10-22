@@ -33,7 +33,8 @@ The goals / steps of this project are the following:
 
 ### 4. Extended Kalman filter
 
-        A matrix of partial derivatives (the Jacobian) is computed which essentially linearizes the non-linear function around the current estimate.
+A matrix of partial derivatives (the Jacobian) is computed which essentially linearizes the non-linear function around the current estimate.
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/74e93aa903c2695e45770030453eb77224104ee4.svg)
 
 ## Simulation
 
