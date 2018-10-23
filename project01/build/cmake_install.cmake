@@ -1,4 +1,4 @@
-# Install script for directory: /home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01
+# Install script for directory: /home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

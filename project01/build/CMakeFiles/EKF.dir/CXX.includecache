@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/FusionEKF.cpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/FusionEKF.cpp
 FusionEKF.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/FusionEKF.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/FusionEKF.hpp
 tools.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.hpp
 Eigen/Dense
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/Eigen/Dense
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/Eigen/Dense
 iostream
 -
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/FusionEKF.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/FusionEKF.hpp
 measurement_package.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/measurement_package.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/measurement_package.hpp
 Eigen/Dense
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/Eigen/Dense
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/Eigen/Dense
 vector
 -
 string
@@ -28,11 +28,11 @@ string
 fstream
 -
 kalman_filter.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/kalman_filter.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/kalman_filter.hpp
 tools.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.hpp
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/json.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/json.hpp
 algorithm
 -
 array
@@ -88,43 +88,43 @@ utility
 vector
 -
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/kalman_filter.cpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/kalman_filter.cpp
 kalman_filter.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/kalman_filter.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/kalman_filter.hpp
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/kalman_filter.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/kalman_filter.hpp
 Eigen/Dense
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/Eigen/Dense
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/Eigen/Dense
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/main.cpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/main.cpp
 uWS/uWS.h
 -
 iostream
 -
 json.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/json.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/json.hpp
 math.h
 -
 FusionEKF.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/FusionEKF.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/FusionEKF.hpp
 tools.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.hpp
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/measurement_package.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/measurement_package.hpp
 Eigen/Dense
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/Eigen/Dense
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/Eigen/Dense
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.cpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.cpp
 iostream
 -
 tools.hpp
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.hpp
 
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/tools.hpp
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/tools.hpp
 vector
 -
 Eigen/Dense
-/home/yunwu/Udacity/SelfDrivingCarEngineering/term2/week03/project/result/project01/src/Eigen/Dense
+/home/mueavi-pc-01/HumanDrive/workspaces/gitworkspace/Udacity_Term2_Projects/project01/src/Eigen/Dense
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

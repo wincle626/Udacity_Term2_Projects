@@ -40,7 +40,6 @@ set( EKF_INC
     ./src/kalman_filter.hpp
     ./src/tools.hpp
 )
-include_directories( $ENV{CPLUS_INCLUDE_PATH} )
 add_executable( EKF ${EKF_SRC} ${EKF_INC} )    
 target_include_directories( EKF SYSTEM
     PUBLIC ${EIGEN_INCLUDE_DIRS}
