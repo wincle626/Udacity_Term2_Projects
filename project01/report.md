@@ -8,7 +8,7 @@ The goals / steps of this project are the following:
 
 
 ## Algorithm Flow
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/flowchat.png)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/flowchat.png)
 
 ### 1. Initialize the state and covariance matrices.
 
@@ -35,7 +35,7 @@ The goals / steps of this project are the following:
 
 Extended Kalman Filter essentially linearizes the non-linear function around the current estimate. A matrix of partial derivatives (the Jacobian) is computed:
 
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/74e93aa903c2695e45770030453eb77224104ee4.svg)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/74e93aa903c2695e45770030453eb77224104ee4.svg)
 
 which is used for updating process :
 
@@ -63,9 +63,9 @@ which is used for updating process :
 
 ### 3. Connect the simulator.
         Dataset1:      
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/dataset1.png)
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/video.gif)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/dataset1.png)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/video.gif)
 
         Dataset2:      
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/dataset2.png)
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/img/video2.gif)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/dataset2.png)
+![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/video2.gif)
