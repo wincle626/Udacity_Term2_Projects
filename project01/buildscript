@@ -1,0 +1,7 @@
+source ./install_uwebsockets.sh
+sudo apt install libeigen3-dev
+cd ../build
+rm -rf *
+cmake ..
+make -j2
+cd ..
