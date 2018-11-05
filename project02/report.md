@@ -1,71 +1,91 @@
-# Extended Kalman Filter
+# Unscented Kalman Filter Project Starter Code
+Self-Driving Car Engineer Nanodegree Program
 
-The goals / steps of this project are the following:
-* Follow the taugh Extended Kalman Filter algorithm to build a C++ based project
-* Test the created Extended Kalman Filter with simulated Lidar and Radar dataset.
-* The position & verlosity vector output coordinates [px, py, vx, vy ] must have an root-mean-square error, RMSE <= [.11, .11, 0.52, 0.52] 
+In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
+
+This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
+
+This repository includes two files that can be used to set up and intall [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO. Please see [this concept in the classroom](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/16cf4a78-4fc7-49e1-8621-3450ca938b77) for the required version and installation scripts.
+
+Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
+
+1. mkdir build
+2. cd build
+3. cmake ..
+4. make
+5. ./UnscentedKF
+
+Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
+
+Note that the programs that need to be written to accomplish the project are src/ukf.cpp, src/ukf.h, tools.cpp, and tools.h
+
+The program main.cpp has already been filled out, but feel free to modify it.
+
+Here is the main protcol that main.cpp uses for uWebSocketIO in communicating with the simulator.
 
 
+INPUT: values provided by the simulator to the c++ program
 
-## Algorithm Flow
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/flowchat.png)
+["sensor_measurement"] => the measurment that the simulator observed (either lidar or radar)
 
-### 1. Initialize the state and covariance matrices.
 
-        x - Initial measurement
-        F - State transition model
-        P - Error covariance matrix (a measure of the estimated accuracy of the state estimate)
-        H - Observation model
-        Q - Covariance of the process noise
+OUTPUT: values provided by the c++ program to the simulator
 
-### 2. Predict the state.
+["estimate_x"] <= kalman filter estimated position x
+["estimate_y"] <= kalman filter estimated position y
+["rmse_x"]
+["rmse_y"]
+["rmse_vx"]
+["rmse_vy"]
 
-        x' = F * x + u  -  Predicted (a priori) state estimate 
-        P = F * P * F^T + Q  -  Predicted (a priori) error covariance
+---
 
-### 3. Update the state and covariance matrices.
+## Other Important Dependencies
+* cmake >= 3.5
+  * All OSes: [click here for installation instructions](https://cmake.org/install/)
+* make >= 4.1 (Linux, Mac), 3.81 (Windows)
+  * Linux: make is installed by default on most Linux distros
+  * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
+  * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
+* gcc/g++ >= 5.4
+  * Linux: gcc / g++ is installed by default on most Linux distros
+  * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
+  * Windows: recommend using [MinGW](http://www.mingw.org/)
 
-        y = z − H * x'  -  Measurement pre-fit residual 
-        S = H * P' * H^T + R  -  Pre-fit residual covariance 
-        K = P' * H * S^-1  -  Kalman gain 
-        x = x' + K * y  -  Updated state estimate 
-        P = (I − K * H) * P'  -  Updated estimate covariance 
+## Basic Build Instructions
 
-### 4. Extended Kalman Filter
+1. Clone this repo.
+2. Make a build directory: `mkdir build && cd build`
+3. Compile: `cmake .. && make`
+4. Run it: `./UnscentedKF` Previous versions use i/o from text files.  The current state uses i/o
+from the simulator.
 
-Extended Kalman Filter essentially linearizes the non-linear function around the current estimate. A matrix of partial derivatives (the Jacobian) is computed:
+## Editor Settings
 
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/74e93aa903c2695e45770030453eb77224104ee4.svg)
+We've purposefully kept editor configuration files out of this repo in order to
+keep it as simple and environment agnostic as possible. However, we recommend
+using the following settings:
 
-which is used for updating process :
+* indent using spaces
+* set tab width to 2 spaces (keeps the matrices in source code aligned)
 
-        y = z − H * x'  -  Measurement pre-fit residual 
+## Code Style
 
-## Simulation
+Please stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html) as much as possible.
 
-### 1. Files.
-        ./CmakeLists.txt
-          |__./cmake/FindEigen.cmake
-          |__.src/FusionEKF.cpp
-          |__.src/FusionEKF.hpp
-          |__.src/json.hpp
-          |__.src/kalman_filter.cpp
-          |__.src/kalman_filter.hpp
-          |__.src/measurement_package.hpp
-          |__.src/tools.cpp
-          |__.src/tools.hpp
-          |__.src/main.cpp
+## Generating Additional Data
 
-### 2. Build the project
-        cd build
-        cmake ..
-        make -j2
+This is optional!
 
-### 3. Connect the simulator.
-        Dataset1:      
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/dataset1.png)
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/video.gif)
+If you'd like to generate your own radar and lidar data, see the
+[utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
+Matlab scripts that can generate additional data.
 
-        Dataset2:      
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/dataset2.png)
-![alt text](https://github.com/wincle626/Udacity_Term2_Projects/blob/master/project01/myversion/img/video2.gif)
+## Project Instructions and Rubric
+
+This information is only accessible by people who are already enrolled in Term 2
+of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1)
+for instructions and the project rubric.
+
+## How to write a README
+A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
