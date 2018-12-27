@@ -97,10 +97,6 @@ The basic principle of working of a PID controller is to satisfy a boundary valu
 The final implementation consisted of following major steps:
 
   1. PID coefficient initialation: it is to set the initial values of coefficient Kp, Ki, Kd as starting point for PID controller. Here the initial values is significantly effect on the contoller output even with the coefficient tuing process. Here, I used the Ziegler-Nichols method: a.Set all gains to 0; b. Set Kd; c. Set Kp to about 1% of Kd and slightly increase Kp; d. Set Ki to about 1% of Kp. 
-  
-## Project Output
-
-PID controller used to derive the steering angles for a car moving on a circular track was implemented successfully. The car could stay close to the center of the lane and take smooth left and right turns along its path.
 
   2. PID error update: the values for each error component is updated by using the recorded cross track error (cte) from the simulator: a. p_error = cte; b. i_error += cte; c. d_error = cte - previous_cte. 
 
