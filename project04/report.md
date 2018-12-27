@@ -132,11 +132,7 @@ PID controller used to derive the steering angles for a car moving on a circular
 
 		    p[i] -= 2*dp[i]  # Go into the other direction
 
-  
-## Project Output
-
-PID controller used to derive the steering angles for a car moving on a circular track was implemented successfully. The car could stay close to the center of the lane and take smooth left and right turns along its path.
-		    err = A(p)
+  		    err = A(p)
 
 		    if err < best_err:  # There was an improvement
 
